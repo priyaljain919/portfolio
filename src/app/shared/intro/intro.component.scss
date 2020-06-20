@@ -1,0 +1,15 @@
+.intro-wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    .button-container {
+        padding-top: 20px;
+        text-align: center;
+        width: 100%;
+        a {
+            margin-right: 20px;
+        }
+    }
+}

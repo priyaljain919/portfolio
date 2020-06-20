@@ -1,0 +1,25 @@
+<section class="project-wrapper" id="projects">
+    <div class="container">
+        <div>
+            <div>
+                <h4 class="text-center mb-4 title">
+                    Projects
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 animate-box" *ngFor="let project of projectList">
+                <div class="blog-entry">
+                    <div class="card project-card">
+                        <img class="card-img-top" src="{{project.image}}" alt="Card image img-fluid">
+                        <div class="card-body">
+                            <h4 class="card-title">{{project.name}}</h4>
+                            <h5 class="card-text"><b>Technology :</b> {{project.technology}} </h5>
+                            <a href="{{project.link}}" class="btn btn-primary  stretched-link ml-2 mr-5 " target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

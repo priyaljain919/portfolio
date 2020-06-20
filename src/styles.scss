@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    color: #2c2c2c;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.btn-round {
+    border-radius: 50% !important;
+}
+
+.btn-primary {
+    // background-color: rgb(21, 70, 95) !important;
+    // border-color: rgb(21, 70, 95) !important;
+    background-color: #ec5453 !important;
+    border-color: #ec5453 !important;
+}
+
+.btn-social {
+    background-color: #c7c7c7b8 !important;
+    border-color: #c7c7c7b8 !important;
+    color: #fff !important;
+}
+
+.custom-btn {
+    min-width: 7em;
+}
+
+.portfolio-list-wrapper {
+    li {
+        display: inline-block;
+    }
+}
+
+
+/* Profile Image Style */
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 0.0;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.6, 0.6);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 0.0;
+    }
+}
+
+.cc-profile-image {
+    a {
+        position: relative;
+        &::before {
+            content: "";
+            border: 15px solid rgba(55, 140, 63, 0.6);
+            border-radius: 50%;
+            height: 180px;
+            width: 180px;
+            position: absolute;
+            left: 0;
+            -webkit-animation: pulsate 1.6s ease-out;
+            animation: pulsate 1.6s ease-out;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            opacity: 0.0;
+            z-index: 99;
+        }
+        img {
+            position: relative;
+            border-radius: 50%;
+            height: 180px;
+            width: 180px;
+            object-fit: cover;
+            object-position: center;
+            padding: 0;
+            margin: 0;
+            border: 15px solid transparent;
+            z-index: 9999;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+        }
+        &:hover {
+            img {
+                transform: scale(1.06, 1.06);
+            }
+        }
+    }
+}

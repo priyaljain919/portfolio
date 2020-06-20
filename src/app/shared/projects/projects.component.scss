@@ -1,0 +1,12 @@
+.project-wrapper {
+    padding: 4em 0 6em;
+    .project-card {
+        margin-top: 20px;
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
