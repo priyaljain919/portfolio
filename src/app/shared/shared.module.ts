@@ -5,11 +5,14 @@ import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { SkillsComponent } from './skills/skills.component';
+import { EducationComponent } from './education/education.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent, IntroComponent, AboutComponent, ExperienceComponent, ProjectsComponent],
+  declarations: [HeaderComponent, IntroComponent, AboutComponent, ExperienceComponent, ProjectsComponent, SkillsComponent, EducationComponent, FooterComponent],
   imports: [
     CommonModule
   ],
@@ -18,7 +21,10 @@ import { ProjectsComponent } from './projects/projects.component';
     IntroComponent,
     AboutComponent,
     ExperienceComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent,
+    EducationComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
