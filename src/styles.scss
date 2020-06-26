@@ -20,9 +20,13 @@ body {
 }
 
 .btn-social {
-    background-color: #c7c7c7b8 !important;
-    border-color: #c7c7c7b8 !important;
+    background-color: #00334D !important;
+    border-color: #00334D !important;
     color: #fff !important;
+    &:hover {
+        transition: 0.3s all ease-in-out;
+        transform: scale(1.03);
+    }
 }
 
 .custom-btn {
