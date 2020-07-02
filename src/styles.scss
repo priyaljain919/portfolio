@@ -39,6 +39,24 @@ body {
     }
 }
 
+.underline-text-wrapper {
+    position: relative;
+    font-size:25px;
+    padding-bottom: 20px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: #00334D;
+        height: 4px;
+        width: 43px;
+        transform: translate(0, -50%);
+        left: 48%;
+        bottom: 0;
+
+    }
+}
+
 
 /* Profile Image Style */
 
