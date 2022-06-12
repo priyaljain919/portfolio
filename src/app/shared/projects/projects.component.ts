@@ -20,10 +20,10 @@ export class ProjectsComponent implements OnInit {
         desc: 'It\'s basically for Google Women Techmakers global event website for registration, agenda and session for the event. Implemented whole project using Vue, HTML, CSS'
       },
       {
-        name: 'Tyko',
-        image: 'assets/images/tyko.PNG',
-        link: 'https://tyko.in/',
-        desc: 'Tyko is type of portal website where user able to choose to become professional or expert domain and show the details about user including like, comment, share and list of timeline post. Implemented whole project using Angular, NgRx Store, HTML, SCSS'
+        name: 'Buyogo',
+        image: 'assets/images/logo3.png',
+        link: 'https://cms.develop.buyogocloud.com/#/',
+        desc: 'Buyogo GMBH is a software is built to thrive in complex business-to-business commerce scenarios. Implemented whole project using Angular, HTML, SCSS'
       },
       {
         name: 'Delivr',
